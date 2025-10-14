@@ -1,4 +1,6 @@
 # 🧩 Custom Native MVC — PHP Implementation
+![Architecture Diagram](https://github.com/ehab-elshimi/custom-native-mvc/raw/main/public/images/native-mvc.png)
+
 
 A lightweight, custom-built MVC architecture written in **native PHP**,  
 showcasing a deep understanding of the **Model–View–Controller (MVC)** pattern —  
@@ -78,7 +80,7 @@ php -S localhost:8000
 Then open your browser:
 
 - 🌐 [http://localhost/custom-native-mvc/](http://localhost/custom-native-mvc) → View all users (HTML page)  
-- 🌐 [http://localhost/custom-native-mvc/api](http://localhost/custom-native-mvc/api) → Get all users (JSON API)
+- 🌐 [http://localhost/custom-native-mvc/api/users](http://localhost/custom-native-mvc/api/users) → Get all users (JSON API)
 
 ---
 
